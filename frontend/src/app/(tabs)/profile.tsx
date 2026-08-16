@@ -13,7 +13,7 @@ import { useFocusEffect, useRouter } from 'expo-router';
 import { Picker } from '@react-native-picker/picker';
 
 const PROFILE_KEY = '@find_scholar_profile';
-const API_URL = 'http://10.66.31.87:5000/api/auth/profile';
+const API_URL = 'https://find-scholar.onrender.com/api/auth/profile';
 
 type Profile = {
   educationLevel: string;

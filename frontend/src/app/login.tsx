@@ -12,7 +12,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 
-const API_URL = 'http://10.66.31.87:5000/api/auth/login';
+const API_URL = 'https://find-scholar.onrender.com/api/auth/login';
 
 export default function LoginScreen() {
   const router = useRouter();

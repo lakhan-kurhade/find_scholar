@@ -12,7 +12,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const API_URL =
-  'http://10.66.31.87:5000/api/scholarships/recommended';
+  'https://find-scholar.onrender.com/api/scholarships/recommended';
 
 const PROFILE_KEY = '@find_scholar_profile';
 

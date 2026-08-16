@@ -13,7 +13,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Picker } from '@react-native-picker/picker';
 import { useRouter } from 'expo-router';
 
-const API_URL = 'http://10.66.31.87:5000/api/auth/signup';
+const API_URL = 'https://find-scholar.onrender.com/api/auth/signup';
 
 export default function SignupScreen() {
   const router = useRouter();
