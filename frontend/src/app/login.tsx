@@ -61,13 +61,14 @@ await AsyncStorage.setItem(
 await AsyncStorage.setItem(
   '@find_scholar_profile',
   JSON.stringify({
-    educationLevel: data.user.educationLevel,
-    course: data.user.course,
-    fieldOfStudy: data.user.fieldOfStudy,
-    state: data.user.state,
-    category: data.user.category,
-    familyIncome: data.user.annualIncome,
-  })
+  educationLevel: data.user.educationLevel,
+  course: data.user.course,
+  fieldOfStudy: data.user.fieldOfStudy,
+  state: data.user.state,
+  category: data.user.category,
+  gender: data.user.gender,
+  familyIncome: data.user.annualIncome,
+})
 );
 
 Alert.alert('Success', 'Login successful!', [

@@ -41,6 +41,7 @@ export default function TabsLayout()  {
           title: 'Profile',
         }}
       />
+      <Tabs.Screen name="scholarship-details" options={{ href: null }} />
     </Tabs>
   );
 }

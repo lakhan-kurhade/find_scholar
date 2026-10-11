@@ -166,6 +166,10 @@ export default function HomeScreen() {
           </Text>
         </TouchableOpacity>
 
+        <View style={styles.authButtons}>
+  
+</View>
+
         {/* Quick Categories */}
         <View style={styles.sectionHeader}>
           <Text style={styles.sectionTitle}>
@@ -663,4 +667,42 @@ const styles = StyleSheet.create({
     color: '#4F46E5',
     marginTop: 4,
   },
+  authButtons: {
+  flexDirection: 'row',
+  gap: 12,
+  marginTop: -18,
+  marginBottom: 32,
+},
+
+loginButton: {
+  flex: 1,
+  height: 50,
+  borderRadius: 14,
+  backgroundColor: '#FFFFFF',
+  borderWidth: 1.5,
+  borderColor: '#4F46E5',
+  justifyContent: 'center',
+  alignItems: 'center',
+},
+
+loginButtonText: {
+  color: '#4F46E5',
+  fontSize: 15,
+  fontWeight: '700',
+},
+
+signupButton: {
+  flex: 1,
+  height: 50,
+  borderRadius: 14,
+  backgroundColor: '#4F46E5',
+  justifyContent: 'center',
+  alignItems: 'center',
+},
+
+signupButtonText: {
+  color: '#FFFFFF',
+  fontSize: 15,
+  fontWeight: '700',
+},
 });
