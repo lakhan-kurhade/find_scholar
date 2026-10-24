@@ -1,21 +1,3 @@
-// backend/data/scholarships.js
-// CANONICAL seed data for Find Scholar — 80 records.
-//
-// This is the single source of truth. Delete these before using this file:
-//   - backend/data/scholarships.backup.js
-//   - backend/scholarships.json
-//   - backend/Scholarship.js (stray root-level model duplicate)
-//
-// Every record has categories / genders / maxIncome explicitly populated
-// (no more relying on the server.js regex fallback to guess eligibility
-// from free text — that fallback was silently marking data-incomplete
-// scholarships as "open to everyone", which was the root cause of random
-// scholarships showing up in recommendations).
-//
-// Conventions enforced across every record:
-//   - genders: lowercase only ("male" | "female"), matching Scholarship.js schema enum
-//   - categories: lowercase only ("open" | "sc" | "st" | "obc" | "vjnt" | "sbc" | "sebc" | "ews" | "minority")
-//   - educationLevels: full words ("Undergraduate" | "Postgraduate" | "Diploma" | "PhD")
 
 const scholarships = [
   {

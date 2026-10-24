@@ -505,8 +505,16 @@ app.get("/api/scholarships/recommended", async (req, res) => {
       return null;
     };
 
+    const getIncomeMin = (income) => {
+  const t = normalize(income).replace(/[–—]/g, "-");
+  const nums = (t.match(/\d+(\.\d+)?/g) || []).map(Number);
+  if (!nums.length) return null;
+  if (/below|under|less/.test(t)) return 0;
+  return nums[0] * 100000;
+};
+
     const userIncomeValue =
-      getIncomeValue(userIncome);
+  getIncomeMin(userIncome);
 
     // ==========================================
     // SCHOLARSHIP SEARCH TEXT
@@ -837,9 +845,9 @@ app.get("/api/scholarships/recommended", async (req, res) => {
       const locations =
         toArray(scholarship.location);
 
-      if (locations.length === 0) {
-        return true;
-      }
+      if (locations.includes("international")) {
+  return true;
+}
 
       const genericTags = [
         "india",
